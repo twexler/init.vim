@@ -19,8 +19,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 
 " Language plugins
+Plug 'carlitux/deoplete-ternjs'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'fatih/vim-go'
+Plug 'leafgarland/typescript-vim'
+Plug 'mhartington/deoplete-typescript'
 Plug 'moll/vim-node'
 Plug 'zchee/deoplete-docker'
 Plug 'zchee/deoplete-go'

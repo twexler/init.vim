@@ -10,6 +10,7 @@ Plug 'python-mode/python-mode'
 Plug 'mbbill/undotree'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Shougo/vimshell.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -58,3 +59,6 @@ nmap <c-t> <plug>(fzf-complete-file)
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+
+" vimshell
+nmap <leader>s <plug>(vimshell_split_create)

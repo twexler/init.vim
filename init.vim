@@ -29,6 +29,12 @@ Plug 'moll/vim-node'
 Plug 'zchee/deoplete-docker'
 Plug 'zchee/deoplete-go'
 Plug 'zchee/deoplete-jedi'
+Plug 'carlitux/deoplete-ternjs'
+Plug 'google/vim-coverage'
+
+" deps
+Plug 'google/vim-maktaba'
+Plug 'google/vim-glaive'
 
 " Colorschemes
 Plug 'KeitaNakamura/neodark.vim'
@@ -55,10 +61,15 @@ let g:airline_theme="bubblegum"
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
-nmap <c-t> <plug>(fzf-complete-file)
+nmap <C-t> :FZF<CR>
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
 " vimshell
 nmap <leader>s <plug>(vimshell_split_create)
+
+" disable pymode folding
+let g:pymode_folding = 0
+let g:pymode_rope = 0
+let g:pymode_rope_completion = 0

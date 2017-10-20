@@ -91,3 +91,6 @@ let g:terraform_align = 1
 
 " go
 let g:go_fmt_command = "goimports"
+
+" ag shortcut
+nmap <C-a> :Ag<CR>

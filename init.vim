@@ -6,7 +6,7 @@ Plug 'ctjhoa/spacevim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'hecal3/vim-leader-guide'
-Plug 'python-mode/python-mode'
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'mbbill/undotree'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdtree'
@@ -55,6 +55,8 @@ colorscheme neodark
 " Syntax highlighting, obv
 syntax enable
 set expandtab
+set shiftwidth=2
+set tabstop=2
 
 " Leader config
 let mapleader = ' '
@@ -94,3 +96,6 @@ let g:go_fmt_command = "goimports"
 
 " ag shortcut
 nmap <C-a> :Ag<CR>
+
+" Jenkinsfile
+autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy

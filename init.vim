@@ -10,7 +10,6 @@ Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'mbbill/undotree'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdtree'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Shougo/vimshell.vim'
@@ -20,14 +19,10 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Language plugins
 Plug 'mitsuse/autocomplete-swift'
-Plug 'zchee/deoplete-docker'
-Plug 'zchee/deoplete-go'
-Plug 'zchee/deoplete-jedi'
-Plug 'carlitux/deoplete-ternjs'
-Plug 'mhartington/deoplete-typescript'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'google/vim-coverage'
 Plug 'fatih/vim-go'
@@ -74,9 +69,6 @@ nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
 nmap <C-t> :FZF<CR>
-
-" deoplete
-let g:deoplete#enable_at_startup = 1
 
 " vimshell
 nmap <leader>s <plug>(vimshell_split_create)

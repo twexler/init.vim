@@ -94,3 +94,6 @@ nmap <C-a> :Ag<CR>
 
 " Jenkinsfile
 autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy
+
+" python
+let g:python3_host_prog = "/usr/local/bin/python3"
